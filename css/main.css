@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+.header {
+  grid-area: header;
+  background-color: #FFCE01; }
+  .header .h1__vangogh {
+    font-weight: 600;
+    text-align: center;
+    height: 40px;
+    font-family: 'Volkhov', serif;
+    font-style: italic; }
+  .header .logotype {
+    height: 100%;
+    padding-left: 48%;
+    padding-right: 48%; }
+
+.nav {
+  font-family: 'Volkhov', serif;
+  font-style: italic;
+  font-weight: 600;
+  background-color: #FFCE01;
+  text-align: center;
+  grid-area: nav;
+  height: 80px; }
+  .nav .nav__ul__li {
+    padding-top: 28px;
+    font-size: large;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none; }
+  .nav li:hover {
+    transform: scale(1.2); }
+
+.footer__index {
+  font-family: 'Volkhov', serif;
+  font-style: italic;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 100%;
+  height: 60px;
+  justify-items: center;
+  border-top: black solid 1px;
+  margin-top: 186px;
+  grid-area: footer; }
+  .footer__index .footer__section {
+    border: solid 1px;
+    height: 60px;
+    width: 480px;
+    text-align: center;
+    padding-top: 15px; }
+  .footer__index .btn--Twitter {
+    background-color: #ffbf00; }
+  .footer__index .btn--Youtube {
+    background-color: #ffd400; }
+  .footer__index .btn--Pinterest {
+    background-color: #ffea00; }
+  .footer__index .btn--Museo {
+    background-color: #ffff00; }
+
+/*INDEX*/
+/*MAIN*/
+.main__index {
+  font-family: 'Volkhov', serif;
+  font-style: italic;
+  margin-top: 130px;
+  grid-area: main; }
+  .main__index .h2__index {
+    text-align: center;
+    margin-top: 10px; }
+  .main__index .section__img1, .main__index .section__img2, .main__index .section__img3 {
+    height: 300px;
+    width: 250px;
+    margin-bottom: 20 px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px; }
+  .main__index .section__img__index {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .main__index .section__p__index {
+    display: grid;
+    grid-template-columns: 270px 270px 270px;
+    grid-template-rows: 100%;
+    text-align: center;
+    justify-content: center; }

@@ -1,0 +1,42 @@
+.footer__index
+{
+    font-family: 'Volkhov', serif; 
+    font-style: italic;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    height: 60px;
+    justify-items: center;
+    border-top: black solid 1px;
+    margin-top: 186px;
+    grid-area: footer;
+
+   $estilos: (
+       centro:center
+   );
+
+    .footer__section
+    {
+    border: solid 1px;
+    height: 60px;
+    width: 480px;
+    text-align: map-get($estilos, centro);
+    padding-top: 15px ;
+    }
+
+    $redes: (
+    Twitter: #ffbf00,
+    Youtube: #ffd400,
+    Pinterest: #ffea00,
+    Museo: #ffff00,
+);
+
+@each $red, $color in $redes
+{
+    .btn--#{$red} 
+    {
+        background-color: $color;
+    }
+}
+}

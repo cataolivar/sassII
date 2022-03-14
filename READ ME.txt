@@ -1,0 +1,2 @@
+Hola, hago entrega del proyecto. Aplique la parte de SASS en el index, ya que es la unica pagina hecha con esta. Map y get-map esta aplicado en el footer. Luego tanto mixin, como extend estan aplicados en el main.
+Al proyecto le agregue keywords, description, author y title.
