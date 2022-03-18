@@ -1,0 +1,51 @@
+.grid__area__index
+{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer"
+}
+
+.grid__area__historia
+{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+
+}
+
+.grid__area__periodos
+{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+}
+
+.grid__area__museo
+{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+
+}
+
+.grid__area__contacto
+{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+}

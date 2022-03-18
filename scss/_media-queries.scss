@@ -1,0 +1,141 @@
+/*MEDIA QUERIE - MOBILE INDEX*/
+
+@media screen and (max-width:412px) {
+
+    .header
+    {
+        max-width:max-content;
+        display:grid;
+        grid-template-columns: 31vw 34vw 35vw;   
+        grid-template-rows: 70px;
+
+    .h1__vangogh
+    {
+        font-size:15px;   
+        margin-left:141px;
+    }
+
+    }
+
+    .nav
+    {
+        max-width:max-content;
+        display:grid;
+        grid-template-columns: 31vw 34vw 35vw;  
+        margin-left:-0px; 
+        margin-top: -1px;
+
+    .nav__ul__li
+    {
+        margin-left: 190px;
+        padding-left: 15px;
+        display: grid;
+        grid-template-columns: 15vw 20vw 20vw 20vw 18vw;
+    }
+
+    }
+
+    .main__index
+    {
+        width: 412px;
+        padding-bottom: 40px;
+    
+    }
+
+    .footer__index
+    {
+        width: 412px;
+        margin-top: 15px;
+
+    }
+}
+
+/*MEDIA QUERIE _ MOBILE HISTORIA*/
+
+@media screen and (max-width:412px)
+{
+    .main__historia
+    {
+        width: 400px;
+
+    .img__historia
+    {
+        width: 300px;
+    }
+
+    }
+
+    .footer
+    {
+        width: 412px;
+        margin-left: -1px;
+    }  
+}
+
+/*MEDIA QUERIE _ MOBILE PERIODOS*/
+
+@media screen and (max-width:412px)  {
+
+    .main__periodos
+    {
+       width: 400px;
+       padding-left: 10px;
+       padding-right: 10px;
+    
+    .section__periodos
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    }
+
+    .footer__periodos
+    {
+        width: 412px;
+        margin-top: 1100px;
+    }
+
+}
+
+/*MEDIA QUERIE _ MOBILE MUSEO*/
+
+@media screen and (max-width:412px)
+{
+.main__museo
+{
+    width: 412px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.mapa
+{
+    width: 300px;
+    height: 300px;
+}
+
+}
+
+/*MEDIA QUERIE _ MOBILE CONTACTO*/
+
+@media screen and (max-width:412px)
+{
+    .main__contacto
+    {
+        width: 412px;
+    
+
+    .img__contacto
+    {
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    .section__contacto
+    {
+        width: 370px;
+        margin-bottom: 50px;
+    }
+}
+}

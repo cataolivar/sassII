@@ -31,7 +31,7 @@
     display: flex;
     justify-content: space-evenly;
     list-style: none; }
-  .nav li:hover {
+  .nav .li:hover {
     transform: scale(1.2); }
 
 .footer__index {
@@ -43,23 +43,131 @@
   grid-template-rows: 100%;
   height: 60px;
   justify-items: center;
+  align-items: center;
   border-top: black solid 1px;
-  margin-top: 186px;
+  margin-top: 100px;
   grid-area: footer; }
-  .footer__index .footer__section {
-    border: solid 1px;
-    height: 60px;
-    width: 480px;
-    text-align: center;
-    padding-top: 15px; }
-  .footer__index .btn--Twitter {
-    background-color: #ffbf00; }
-  .footer__index .btn--Youtube {
-    background-color: #ffd400; }
-  .footer__index .btn--Pinterest {
-    background-color: #ffea00; }
-  .footer__index .btn--Museo {
-    background-color: #ffff00; }
+
+.footer {
+  font-family: 'Volkhov', serif;
+  font-style: italic;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 100%;
+  height: 60px;
+  align-items: center;
+  justify-items: center;
+  border-top: black solid 1px;
+  bottom: 0;
+  grid-area: footer; }
+
+.footer__periodos {
+  font-family: 'Volkhov', serif;
+  font-style: italic;
+  background-color: white;
+  border-top: black solid 1px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 100%;
+  height: 60px;
+  align-items: center;
+  justify-items: center;
+  grid-area: footer;
+  margin-top: 400px;
+  grid-area: footer; }
+
+.grid__area__index {
+  display: grid;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer"; }
+
+.grid__area__historia {
+  display: grid;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer"; }
+
+.grid__area__periodos {
+  display: grid;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer"; }
+
+.grid__area__museo {
+  display: grid;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer"; }
+
+.grid__area__contacto {
+  display: grid;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer"; }
+
+/*MEDIA QUERIE - MOBILE INDEX*/
+@media screen and (max-width: 412px) {
+  .header {
+    max-width: max-content;
+    display: grid;
+    grid-template-columns: 31vw 34vw 35vw;
+    grid-template-rows: 70px; }
+    .header .h1__vangogh {
+      font-size: 15px;
+      margin-left: 141px; }
+  .nav {
+    max-width: max-content;
+    display: grid;
+    grid-template-columns: 31vw 34vw 35vw;
+    margin-left: -0px;
+    margin-top: -1px; }
+    .nav .nav__ul__li {
+      margin-left: 190px;
+      padding-left: 15px;
+      display: grid;
+      grid-template-columns: 15vw 20vw 20vw 20vw 18vw; }
+  .main__index {
+    width: 412px;
+    padding-bottom: 40px; }
+  .footer__index {
+    width: 412px;
+    margin-top: 15px; } }
+
+/*MEDIA QUERIE _ MOBILE HISTORIA*/
+@media screen and (max-width: 412px) {
+  .main__historia {
+    width: 400px; }
+    .main__historia .img__historia {
+      width: 300px; }
+  .footer {
+    width: 412px;
+    margin-left: -1px; } }
+
+/*MEDIA QUERIE _ MOBILE PERIODOS*/
+@media screen and (max-width: 412px) {
+  .main__periodos {
+    width: 400px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .main__periodos .section__periodos {
+      display: flex;
+      flex-direction: column; }
+  .footer__periodos {
+    width: 412px;
+    margin-top: 1100px; } }
+
+/*MEDIA QUERIE _ MOBILE MUSEO*/
+@media screen and (max-width: 412px) {
+  .main__museo {
+    width: 412px;
+    padding-bottom: 20px;
+    padding-top: 20px; }
+  .mapa {
+    width: 300px;
+    height: 300px; } }
+
+/*MEDIA QUERIE _ MOBILE CONTACTO*/
+@media screen and (max-width: 412px) {
+  .main__contacto {
+    width: 412px; }
+    .main__contacto .img__contacto {
+      width: 300px;
+      margin-top: 20px; }
+    .main__contacto .section__contacto {
+      width: 370px;
+      margin-bottom: 50px; } }
 
 /*INDEX*/
 /*MAIN*/
@@ -74,7 +182,7 @@
   .main__index .section__img1, .main__index .section__img2, .main__index .section__img3 {
     height: 300px;
     width: 250px;
-    margin-bottom: 20 px;
+    margin-bottom: 30px;
     margin-left: 20px;
     margin-top: 20px;
     padding: 10px; }
@@ -84,8 +192,95 @@
     justify-content: center;
     flex-wrap: wrap; }
   .main__index .section__p__index {
-    display: grid;
-    grid-template-columns: 270px 270px 270px;
-    grid-template-rows: 100%;
-    text-align: center;
+    text-align: center; }
+
+/*HISTORIA*/
+/*MAIN*/
+.main__historia {
+  text-align: center;
+  font-family: 'Volkhov', serif;
+  font-style: italic;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  grid-area: main; }
+  .main__historia p {
+    margin: 2rem 3rem;
+    text-align: justify;
+    line-height: 25px; }
+  .main__historia .h3__historia {
+    font-size: medium;
+    text-align: center; }
+  .main__historia .img__historia:hover {
+    transform: scale(0.9);
+    transition: 2s;
+    height: 362px;
+    width: 420px; }
+
+/*PERIODOS*/
+/*MAIN*/
+.main__periodos {
+  text-align: center;
+  font-family: 'Volkhov', serif;
+  font-style: italic;
+  margin-top: 20px;
+  grid-area: main; }
+  .main__periodos p {
+    line-height: 25px; }
+  .main__periodos .section__periodos {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center; }
+  .main__periodos .section__periodos1 {
+    display: flex;
+    justify-content: center; }
+  .main__periodos .div__periodos {
+    height: 400px;
+    width: 400px; }
+  .main__periodos .div__periodos1 {
+    height: 80px;
+    width: 1000px; }
+
+/*MUSEO*/
+/*MAIN*/
+.main__museo {
+  text-align: center;
+  list-style-position: inside;
+  font-family: 'Volkhov', serif;
+  font-style: italic;
+  grid-area: main;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .main__museo section {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+/*CONTACTO*/
+/*MAIN*/
+.img__contacto:hover {
+  transform: scale(0.9);
+  transition: 2s; }
+
+.main__contacto {
+  text-align: center;
+  font-family: 'Volkhov', serif;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  grid-area: main; }
+  .main__contacto .section__contacto {
+    width: 600px;
+    margin-top: 10px; }
+  .main__contacto .h2__contacto {
+    margin-top: 10px;
+    margin-bottom: 15px; }
+  .main__contacto .section {
+    margin-bottom: 30px; }
+  .main__contacto .section__email {
+    margin-right: 4%;
+    margin-bottom: 30px; }
+  .main__contacto .checkbox {
+    display: flex;
     justify-content: center; }
